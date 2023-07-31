@@ -1,7 +1,7 @@
 clc;
 clear all;
 close all;
-%program fro underdamped
+%program for underdamped
 Zu = 0.15;
 Wu = 6;
 Nu = Wu^2;
@@ -15,7 +15,7 @@ grid on;
 %program for critical damped
 Zc = 1;
 Wc = 6;
-Nc = Wc^2;
+Nc = Wc^2; 
 Dc = [1 2*Zc*Wc Wc^2];
 Sysc=tf(Nc, Dc);
 subplot(2, 2, 2);
